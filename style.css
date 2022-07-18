@@ -1,0 +1,37 @@
+/***************Reset*****************/
+
+html {
+  box-sizing: border-box;
+  font-size: 16px;
+  font-family: "Ibarra Real Nova", serif;
+}
+
+*,
+*::after,
+*::before {
+  box-sizing: inherit;
+}
+
+/************************************/
+
+.normal {
+  background-color: green;
+}
+
+.highlight {
+  background-color: yellow;
+  font-weight: 700;
+}
+
+.error {
+  background-color: lightcoral;
+  border: red;
+}
+
+.p-title {
+  font-size: 1.5rem;
+}
+
+.quote {
+  font-size: 2rem;
+}
