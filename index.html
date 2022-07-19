@@ -17,15 +17,18 @@
     <h1>Typing Game</h1>
   </header>
   <p class="p-title">Practice your typing skills with a quote from Sherlock Holmes. Click <b>**start**</b> to begin!</p>
-  <p id="quote" class="quote"></p>
-  <p id="message"></p>
+  <fieldset class="field">
+    <p id="quote" class="quote"></p>
+  </fieldset>
+  <p id="message" class="message"></p>
   <div>
-    <input type="text" aria-label="current word" id="typed-value">
+    <input type="text" aria-label="current word" id="typed-value" class="player-text" placeholder="Type here..."
+      disabled>
     <br>
-    <button type="button" id="start">start</button>
+    <button type="button" id="start" class="start-btn">START</button>
   </div>
-  <div>
-
+  <div class="instructions">
+    <p><b>Instructions: </b>Easy. Type as fast as you can</p>
   </div>
 
   <script src="script.js"></script>

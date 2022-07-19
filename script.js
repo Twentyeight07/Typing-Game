@@ -28,7 +28,8 @@ d.addEventListener("click", (e) => {
     //Reset the word Index for tracking
     wordIndex = 0;
     //Reset the input class
-    $typedValue.className = "";
+    // $typedValue.className = "";
+    $typedValue.disabled = false;
 
     //UI updates
     // Create an array of span elements so we can set a class
@@ -69,11 +70,13 @@ d.addEventListener("input", (e) => {
         elapsedTime / 1000
       } seconds`;
       $message.innerHTML = message;
+      $typedValue.setAttribute("disabled", "");
     } else if (typedValue.endsWith(" ") && typedValue.trim() === currentWord) {
       //This is not the end of sentence, just end of word
       //Clear the value for the next word
       $typedValue.value = "";
-      $typedValue.className = " ";
+      $typedValue.classList.add("correct");
+      $typedValue.classList.remove("error");
       //Move to the next word
       wordIndex++;
       // reset the class name for all elements in quote

@@ -4,6 +4,11 @@ html {
   box-sizing: border-box;
   font-size: 16px;
   font-family: "Ibarra Real Nova", serif;
+  text-align: center;
+}
+
+body {
+  margin: 0;
 }
 
 *,
@@ -13,6 +18,31 @@ html {
 }
 
 /************************************/
+.correct {
+  background-color: white;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+.error {
+  background-color: lightcoral;
+  border: red;
+  width: 20rem;
+  height: 2rem;
+  border-radius: 0.5rem;
+}
+
+.field {
+  border-radius: 0.5rem;
+  margin-left: auto;
+  margin-right: auto;
+  width: auto;
+}
+
+.message {
+  font-size: 1.4rem;
+}
 
 .normal {
   background-color: green;
@@ -23,15 +53,46 @@ html {
   font-weight: 700;
 }
 
-.error {
-  background-color: lightcoral;
-  border: red;
+.instructions {
+  font-size: 1.2rem;
+  border-radius: 0.5rem;
+  text-align: center;
+  margin-left: auto;
+  margin-right: auto;
+  display: flex;
+  justify-content: center;
 }
 
 .p-title {
   font-size: 1.5rem;
 }
 
+.player-text {
+  width: 20rem;
+  height: 2rem;
+  border-radius: 0.4rem;
+  margin-bottom: 1rem;
+}
+
 .quote {
   font-size: 2rem;
+}
+
+.start-btn {
+  font-size: 1.2rem;
+  border-radius: 0.3rem;
+  margin-top: 0.5rem;
+  width: auto;
+  height: auto;
+  background-color: #26bf11;
+  color: white;
+  transition: all 0.2s ease-in-out;
+}
+
+.start-btn:hover {
+  cursor: pointer;
+  background-color: #74db66;
+  opacity: 0.85;
+  color: black;
+  transition: all 0.2s ease-in-out;
 }
